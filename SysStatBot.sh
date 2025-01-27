@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# token del bot de Telegram
-TOKEN="7153902856:AAFuyErx3lMEswAmLBBIBbWXIZjHN2-MTEU"
-# ID del chat
-CHAT_ID="-4173191777"
+# token del bot de Telegram, reemplazar por el nuestro
+TOKEN="000000000000000000000000000"
+# ID del chat, reemplazar por el nuestro
+CHAT_ID="0000000000000"
 # URL de la API de Telegram
 API_URL="https://api.telegram.org/bot$TOKEN"
 
@@ -98,7 +98,7 @@ handle_command() {
                 uptime | awk '{print $3}'| sed 's/,//'
         }
         uptime=$(get_uptime)
-        send_message "🕑El sistema lleva encendido $uptime horas"
+        send_message "El sistema lleva encendido $uptime horas"
         ;;
 
         "/commands")
